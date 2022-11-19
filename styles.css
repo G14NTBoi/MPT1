@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+#TicTacTable {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  margin: 10vh auto;
+}
+  
+.TicTac{
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  float: left;
+  border: 1vw solid black;
+  background-color: white;
+}
+.TicTac div{ 
+  posiition: Absolute;
+  width: 100%;
+  height: 100%;
+}
+.Slot1{
+  background-image: url(images/target-arrows.png);
+  background-size: cover;
+}
+.Slot5{
+  background-image: url(images/target-arrows.png);
+  background-size: cover;
+}
+.Slot9{
+  background-image: url(images/target-poster.png);
+  background-size: cover;
+}
+.Slot3{
+  background-image: url(images/target-arrows.png);
+  background-size: cover;
+}
+.Slot2{
+  background-image: url(images/target-poster.png);
+  background-size: cover;
+}
