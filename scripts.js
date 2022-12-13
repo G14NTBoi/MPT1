@@ -3,24 +3,27 @@
 // set up player scores
 Player1_score = 0;
 Player2_score= 0;
-// set up 3 in a row tracker.
-Three_in_a_row = 0;
-
 Clicked_TicTac_Slot = 0;
 
 
 function Player_Click (){ //function that alternates the clicks between player 1 and player 2
-  Slot_clicked = document.querySelectorAll(".clicked");
+  Clicked_TicTac_Slot = document.querySelectorAll(".clicked");
+  if (!what.classList.contains("clicked"))
+    {
+      what.classList.add("clicked");
+      Clicked_TicTac_Slot++;
+    }
     for (Clicked_TicTac_Slot = 0; Clicked_TicTac_Slot <= 8; Clicked_TicTac_Slot++)
       {
         if (Clicked_TicTac_Slot % 2 != 0)
           {
-           Slot_clicked.classList.contains("Player1"); 
+           Clicked_TicTac_Slot.classList.contains("Player1"); 
           }
         else
         {
-          Slot_clicked.classList.contains("Player2");
+          Clicked_TicTac_Slot.classList.contains("Player2");
         }
+        CheckForRow();
       }
 }
 function Board_reset(Player1, Player2)
