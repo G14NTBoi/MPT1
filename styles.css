@@ -22,23 +22,15 @@
   width: 100%;
   height: 100%;
 }
-.Slot1{
+.clicked .Player1{ /*Player 1 Places the "X"*/ 
   background-image: url(images/target-arrows.png);
   background-size: cover;
-}
-.Slot5{
-  background-image: url(images/target-arrows.png);
-  background-size: cover;
-}
-.Slot9{
+} 
+.clicked .Player2{ /* Player 2 Places the "O"*/
   background-image: url(images/target-poster.png);
   background-size: cover;
 }
-.Slot3{
-  background-image: url(images/target-arrows.png);
-  background-size: cover;
-}
-.Slot2{
-  background-image: url(images/target-poster.png);
-  background-size: cover;
+
+.TicTac .MatchedRow div {
+  border: 1vw solid red;
 }
