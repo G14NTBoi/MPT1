@@ -23,6 +23,12 @@ function Player_Click (){ //function that alternates the clicks between player 1
         }
       }
 }
+function Board_reset(Player1, Player2)
+{
+  Player1.classList.remove("clicked");
+   Player2.classList.remove("clicked");
+  
+}
 function CheckForRow() {
   Clicked_TicTac_Slot = document.querySelectorAll ("Slot");
   ThreeInARow = false;
@@ -44,10 +50,19 @@ function CheckForRow() {
           }          
 }
   else {
-    ThreeInARow = false;
-    
+    Board_reset();
   }
           } // Looking for all possible ways either player gets three in a row. I am aware that is a lot of code, couldn't think of an easier way. Each Number represents a slot starting at 1 and ending at 9 going from left to right. 
+function CheckForWinner()
+{if (Player1_score == 3)
+  {
+    Document.getElementById("TicTacTable").innerHTML ="Player 1 Wins at Tic-Tac-Toe"
+  }
+ else if (Player2_score == 3)
+   {
+     Document.getElementById("TicTacTable").innerHTML ="Player 2 Wins at Tic-Tac-Toe"
+   }
+}
 window.onload =function(){
   SlotList = document.querySelectorAll("TicTac");
   SlotCount = SlotList.length;
