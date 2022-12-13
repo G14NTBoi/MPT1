@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -8,8 +8,14 @@
   position: relative;
   margin: 10vh auto;
 }
-  
-.TicTac{
+#P1Score{
+  Position: right;
+}
+#P2Score{
+  Position: right;
+}
+
+.TicTac {
   position: relative;
   width: 20vw;
   height: 20vw;
@@ -17,18 +23,25 @@
   border: 1vw solid black;
   background-color: white;
 }
-.TicTac div{ 
+
+.TicTac div {
   posiition: Absolute;
   width: 100%;
   height: 100%;
 }
-.clicked .Player1{ /*Player 1 Places the "X"*/ 
+
+.clicked .Player1 {
+  /*Player 1 Places the "X"*/
   background-image: url(images/target-arrows.png);
   background-size: cover;
-} 
-.clicked .Player2{ /* Player 2 Places the "O"*/
+  display: block;
+}
+
+.clicked .Player2 {
+  /* Player 2 Places the "O"*/
   background-image: url(images/target-poster.png);
   background-size: cover;
+  display: block;
 }
 
 .TicTac .MatchedRow div {
